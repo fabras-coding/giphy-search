@@ -1,0 +1,11 @@
+Limit: <input type="number" [(ngModel)]="limit" >
+Term: <input type="text" [(ngModel)]="term" (keyup.enter)="pesquisarGiphy()" >
+
+<input type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
+<br/>
+
+<giphy-search-list [gifsList]="gifs" ></giphy-search-list>
+
+<!-- {{gifs | json}}  //pipe json converse o array para um json desde que o Common Module esteja importado-->
+
+
