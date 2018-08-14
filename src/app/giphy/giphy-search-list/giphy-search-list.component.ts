@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Giphy } from '../giphy-search-manual/giphy.type';
 
 @Component({
   selector: 'giphy-search-list',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class GiphySearchListComponent implements OnInit {
 
   @Input() //usado para permitir a comunicacao de um componente com este componente
-  gifsList: any[]=[];
+  gifsList: Giphy[]=[];
 
   constructor() { }
 
