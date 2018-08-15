@@ -11,4 +11,4 @@ export interface Images{
 export interface Fixed{
     url: string;
     
-}
+}   
