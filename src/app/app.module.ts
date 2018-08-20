@@ -6,11 +6,15 @@ import { GiphySearchManualComponentModule } from './giphy/giphy-search-manual/gi
 import { AppRoutingModule } from './app-routing-module';
 import { ContatoComponent } from './contato/contato.component';
 import { ContatoModule } from './contato/contato.module';
+import { PageNotFoundModule } from './pagenotfound/pagenotfound.module';
+import { InicioModule } from './inicio/inicio.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
     
   ],
   imports: [
@@ -18,7 +22,9 @@ import { ContatoModule } from './contato/contato.module';
     HttpModule,
     GiphySearchManualComponentModule,
     AppRoutingModule,
-    ContatoModule
+    ContatoModule,
+    InicioModule,
+    PageNotFoundModule
   ],
   providers: [],
   bootstrap: [AppComponent]

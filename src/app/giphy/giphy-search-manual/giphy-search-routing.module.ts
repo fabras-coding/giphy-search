@@ -4,7 +4,7 @@ import { Routes, RouterModule} from "@angular/router";
 import {GiphySearchManualComponent} from "./giphy-search-manual.component"
 
 const routes: Routes = [
-    {path: '', component: GiphySearchManualComponent}, // path '' é o raiz
+    // {path: '', component: GiphySearchManualComponent}, // path '' é o raiz
     {path: 'giphy', component: GiphySearchManualComponent}, 
 ]
 
