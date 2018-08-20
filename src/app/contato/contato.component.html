@@ -1,32 +1,49 @@
 <!-- #f é o nome que o angular ira enxergar no typescript e ngForm é a tipagem   -->
 <form #f="ngForm" (ngSubmit)="enviarContato(f)" > 
-  <label>Seu nome
-    <input id="nome" type="text" name="nomeCompleto" placeholder="Seu nome..."
-      #nomeCompleto="ngModel" ngModel minlength="2" required >
-  </label>
-
-  <div *ngIf="nomeCompleto.errors?.required && nomeCompleto.touched" class="error">
-    O nome é obrigatório
+  <div class="row">
+    <label class="label">Seu nome
+      <input class="form-control" id="nome" type="text" name="nomeCompleto" placeholder="Seu nome..."
+        #nomeCompleto="ngModel" ngModel minlength="2" required >
+    </label>
   </div>
 
-  <label ngModelGroup="contato" #contatoUsuario="ngModelGroup" >
-    <span>Email</span>  
-    <input type="email" name="email" placeholder="Seu email..." ngModel required >
+  <div class="row">
+    <div class="alert alert-danger" *ngIf="nomeCompleto.errors?.required && nomeCompleto.touched" >
+       O nome é obrigatório
+    </div>
+  </div>
+  
 
-    <span>Mensagem</span>  
-    <input type="text" name="mensagem" placeholder="Sua mensagem..." ngModel required >
+  <div class="row">
+  
+    <label class="label" ngModelGroup="contato" #contatoUsuario="ngModelGroup" >
+      Email  
+    <input class="form-control" type="email" name="email" placeholder="Seu email..." ngModel required >
+    </label>
+  </div>
 
-  </label>
+  <div class="row">
+    <label class="label" ngModelGroup="contato" #contatoUsuario="ngModelGroup">
+        Mensagem
+      <input class="form-control"  type="textarea" name="mensagem" placeholder="Sua mensagem..." ngModel required >
+    </label>
+      
+    
+  
+  </div>
+ <br>
+  <div class="row">
+      <button class="btn btn-primary" type="submit" [disabled]="f.invalid" >Sign up</button>
 
-  <button type="submit" [disabled]="f.invalid" >Sign up</button>
+  </div>
 
 </form>
 
-<p>
+<!-- <p>
   {{nomeCompleto.errors | json}}
 </p>
 
 
    <p>
     {{f.controls.nomeCompleto?.errors | json}}
-  </p>
+  </p> -->

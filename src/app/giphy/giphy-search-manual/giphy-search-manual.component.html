@@ -1,7 +1,20 @@
-Limit: <input type="number" [(ngModel)]="limit" >
-Term: <input type="text" [(ngModel)]="term" (keyup.enter)="pesquisarGiphy()" >
+<div class="row">
+    <label class="label"> Limit:
+    <input class="form-control" type="number" [(ngModel)]="limit" >
+    </label>
+</div>
 
-<input type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
+<div class="row">
+    <label class="label">
+            Term:
+            <input class="form-control" type="text" [(ngModel)]="term" (keyup.enter)="pesquisarGiphy()" >        
+    </label>
+</div>
+
+<div class="row">
+    <input class="btn btn-secondary" type="button" value="Pesquisar" (click)="pesquisarGiphy()" >
+</div>
+
 <br/>
 
 <giphy-search-list [gifsList]="gifs" ></giphy-search-list>

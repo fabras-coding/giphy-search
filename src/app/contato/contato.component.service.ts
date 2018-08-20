@@ -17,7 +17,7 @@ export class ContatoComponentService {
         let email = contatoForm.contato.email;
         let mensagem = contatoForm.contato.mensagem;
 
-        return this.http.post(host2, {title: email, body: nomeCompleto, userId: mensagem});
+        return this.http.post(host2, {email: email, nome: nomeCompleto, mensagem: mensagem});
     }
 
 
