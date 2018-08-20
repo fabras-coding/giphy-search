@@ -18,12 +18,12 @@ export class GiphySearchManualComponent implements OnInit{
     limit: string;
     term: string;
 
-    constructor (private title:Title, private giphySearchService : GiphySearchService){
+    constructor (protected title:Title, protected giphySearchService : GiphySearchService){
 
     }
 
     ngOnInit(){
-        this.title.setTitle("Giphy Search Boladaum");
+        this.title.setTitle("Giphy Search manual...");
     }
  
 

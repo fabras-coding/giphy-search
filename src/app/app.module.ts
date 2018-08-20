@@ -8,12 +8,15 @@ import { ContatoComponent } from './contato/contato.component';
 import { ContatoModule } from './contato/contato.module';
 import { PageNotFoundModule } from './pagenotfound/pagenotfound.module';
 import { InicioModule } from './inicio/inicio.module';
+import { GiphySearchAutoModule } from './giphy/giphy-search-auto/giphy-search-auto.module';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     
     
   ],
@@ -24,6 +27,7 @@ import { InicioModule } from './inicio/inicio.module';
     AppRoutingModule,
     ContatoModule,
     InicioModule,
+    GiphySearchAutoModule,
     PageNotFoundModule
   ],
   providers: [],
