@@ -17,6 +17,6 @@ import { GiphySearchManualComponentRoutingModule } from "./giphy-search-routing.
      
 })
 
-export class GiphySearchManualComponentModule{
+export class GiphySearchManualModule{
 
 }

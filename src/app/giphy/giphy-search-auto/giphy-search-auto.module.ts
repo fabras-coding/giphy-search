@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GiphySearchAutoComponent} from './giphy-search-auto.component';
 import { GiphySearchAutoRoutingModule } from './giphy-search-auto-routing.module';
+import { GiphySearchService } from '../giphy-search.service';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { GiphySearchAutoRoutingModule } from './giphy-search-auto-routing.module
   ],
   exports: [],
   declarations: [GiphySearchAutoComponent],
-  providers: [],
+  providers: [GiphySearchService]
+  
 })
 export class GiphySearchAutoModule { }
