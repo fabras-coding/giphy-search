@@ -22,6 +22,10 @@ imports:[ RouterModule.forRoot([
     {
         path:'contato',
         loadChildren:'../app/contato/contato.module#ContatoModule'
+    },
+    {
+        path: 'diretiva-common-module',
+        loadChildren: '../app/diretiva-common-module/diretiva-common-module.module#DiretivaCommonModuleModule'
     }
 
 

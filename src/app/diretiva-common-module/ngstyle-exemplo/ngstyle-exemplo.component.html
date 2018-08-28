@@ -1,0 +1,27 @@
+<p style="padding: 1rem; color:red; font-weight: bold; border-bottom: borderStyle">
+    Veja o ngStyle manual tradicional aqui
+</p>
+
+<p style=""
+    [ngStyle]="{
+        'color': 'red',
+        'font-weight':'bold',
+        'borderBottom': boderStyle
+    }">
+    Veja o ngStyle aqui com a cor definida no proprio html
+</p>
+
+
+<p style=""
+    [ngStyle]="{
+        'color': cor,
+        'font-weight':'bold',
+        'border-bottom': boderStyle
+    }">
+    Veja o ngStyle aqui com a cor definida no codebehind
+</p>
+
+<p style=""
+  [ngStyle]="alertStyles">
+    Veja o ngStyle manual tradicional aqui (definido em obj no codebehind)
+</p>
