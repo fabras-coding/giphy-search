@@ -1,1 +1,13 @@
 ng Switch Works
+
+<div class="table-selection">
+    <button (click)="setFormatacao(1)">Itálico</button>
+    <button (click)="setFormatacao(2)">Negrito</button>
+    <button (click)="setFormatacao(3)">Sublinhado</button>
+</div>
+
+<div [ngSwitch]="formatacao">
+    <I *ngSwitchCase="1">Itálico</I>
+    <B *ngSwitchCase="2">Negrito</B>
+    <U *ngSwitchCase="3">Sublinhado</U>
+</div>

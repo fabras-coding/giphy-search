@@ -10,8 +10,7 @@ export class NgStyleExemploComponent  {
     
     
     cor: string = 'blue';
-    flat: boolean = false;
-    dark:boolean = false;
+ 
 
     borderStyle ='1px solid black';
 

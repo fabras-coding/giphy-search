@@ -9,14 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class NgSwitchExemploComponent  {
     
     
-tab: number =0;
+formatacao: number =0;
 
-setTab(num: number){
-    this.tab=num;
+setFormatacao(num: number){
+    this.formatacao=num;
 }
 
 isSelected(num: number){
-    return this.tab ===num;
+    return this.formatacao ===num;
 }
 
 }

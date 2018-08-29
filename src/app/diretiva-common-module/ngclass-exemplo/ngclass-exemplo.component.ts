@@ -6,23 +6,10 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['ngclass-exemplo.component.css']
 })
 
-export class NgClassExemploComponent implements OnInit {
+export class NgClassExemploComponent  {
     
+    flat: boolean = false;
+    dark:boolean = false;
     
-    cor: string = 'brown';
-
-    borderStyle ='1px solid black';
-
-    alertStyles = {
-        'color': 'yellow',
-        'font-weight': 'bold',
-        'borderBottom': this.borderStyle
-    };
-    
-    ngOnInit() {
-        
-    }
-
-    
-    constructor(){}
+ 
 }
