@@ -14,6 +14,9 @@ import { Giphy } from "./giphy.type";
 
 export class GiphySearchManualComponent implements OnInit{
 
+  
+
+
     gifs: Giphy[] = [];
     limit: string;
     term: string;

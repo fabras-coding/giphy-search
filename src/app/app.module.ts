@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing-module';
 import { PageNotFoundModule } from './pagenotfound/pagenotfound.module';
 import { InicioModule } from './inicio/inicio.module';
 import { DiretivaCommonModuleModule } from './diretiva-common-module/diretiva-common-module.module';
+import { PipeComponent } from './pipe/pipe.component';
+import { PipeModule } from './pipe/pipe.module';
 
 
 
@@ -15,8 +17,6 @@ import { DiretivaCommonModuleModule } from './diretiva-common-module/diretiva-co
     AppComponent,
     
     
-    
-    
   ],
   imports: [
     BrowserModule,
@@ -24,6 +24,7 @@ import { DiretivaCommonModuleModule } from './diretiva-common-module/diretiva-co
     AppRoutingModule,
     InicioModule,
     DiretivaCommonModuleModule,
+    PipeModule,
 
     PageNotFoundModule
   ],

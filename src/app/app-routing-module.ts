@@ -26,6 +26,10 @@ imports:[ RouterModule.forRoot([
     {
         path: 'diretiva-common-module',
         loadChildren: '../app/diretiva-common-module/diretiva-common-module.module#DiretivaCommonModuleModule'
+    },
+    {
+        path: 'exemplos-pipe',
+        loadChildren: '../app/pipe/pipe.module#PipeModule'
     }
 
 
