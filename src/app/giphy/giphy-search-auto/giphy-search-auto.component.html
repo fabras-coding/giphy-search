@@ -2,6 +2,8 @@
 <div class="row">
   <label class="label">
           Term:
-          <input class="form-control" type="text" >        
+          <input class="form-control" type="text" [(ngModel)]="term" (keyup.enter)="pesquisarGiphy()" >        
   </label>
 </div>
+
+<giphy-search-list [gifsList]="gifs" ></giphy-search-list>

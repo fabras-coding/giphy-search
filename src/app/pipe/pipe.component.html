@@ -2,10 +2,29 @@
   Pipe works!
 </h1>
 
-
+<h2>Tipo Pessoa Pipe</h2>
+{{'J' | tipoPessoa}}<br>
+{{'F' | tipoPessoa}}
+<br><br><br>
 
 {{' aqui tem pipes de upercase' | uppercase }}
 {{ dataCriacao | date}}
 <p>
     {{dataCriacao | date:"MM/dd/yy"}}
 </p>
+
+
+<h2>Decimal Pipe</h2>
+
+<p>Preço: {{ 10.123 | number}} </p>
+<p>Preço: {{ 10.123 | number: '3.2-2'}} </p> <!-- a formatação do number é x.y-z onde x é o minimo de casas decimais que deve ter a esquerda, y o minimo de casas decimais a direita e z o maximo de casas decimais a direita -->
+
+<h2>Currency Pipe</h2>
+<p>Preço: {{ 10.49 | currency: 'USD':false }} </p>
+<p>Preço: {{ 10.43 | currency: 'USD':true }} </p>
+<p>Preço: {{ 10.42 | currency: 'BRL':true }} </p>
+<p>Preço: {{ 10.45 | currency: 'EUR':true }} </p>
+
+
+<h2>Percent Pipe</h2>
+<p>Percent : {{1 | percent}}</p> <!--numero q colocou * 100 = porcentagem exibida-->
